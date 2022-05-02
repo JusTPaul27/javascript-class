@@ -28,4 +28,19 @@ class Student {
         const age = year - this.yob;
         return age;
     }
+
+    toString() {
+
+        const genere = this.gender === 'f' ? 'Femmina' : 'Maschio';
+
+        const studentString = "Nome: " + this.name + '\n' +
+                            "cognome: " + this.surname + '\n' +
+                            "Età: " + this.calculateAge() + '\n' +
+                            "Genere: " + genere + '\n' +
+                            "Media voti: " + this.calculateGradeMean();
+
+        return studentString;
+    }
+
 }
+

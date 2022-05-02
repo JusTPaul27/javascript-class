@@ -25,5 +25,8 @@ const student3 = new Student('Paolo', 'Foppiano', 1997, 'm', [10, 9, 2]);
 
 console.log(student3.calculateGradeMean())
 
-console.log('Età Mirco ', + student2.calculateAge())
-console.log('Età Paolo ', + student3.calculateAge())
+console.log('Età Mirco ', + student2.calculateAge());
+console.log('Età Paolo ', + student3.calculateAge());
+
+console.log(student2.toString());
+console.log(student3.toString());
